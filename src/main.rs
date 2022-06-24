@@ -105,7 +105,7 @@ fn main() {
                     "svg" => {
                         block_on(svg_to_webp(&path_string));
                     }
-                    "png" | "jpg" | "jpeg" | "HEIC" => {
+                    "png" | "jpg" | "jpeg" => {
                         block_on(image_to_webp(&path_string));
                     }
                     _ => {
